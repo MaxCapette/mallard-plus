@@ -295,7 +295,7 @@ export function MainPage() {
         <div className=" mx-auto px-4 md:px-6 flex flex-col md:flex-column items-center justify-between">
           <p className="  mt-4 ">14 RUE CURIE</p>
           <p className="   ">06000 NICE</p>
-          <p className="  mt-4 ">contact@ep-strategies.fr</p>
+          <p className="  mt-4 ">contact@mallard-plus.fr</p>
 
           <p className="  mt-4 ">TEL: 05 35 54 19 41</p>
         </div>
@@ -303,6 +303,7 @@ export function MainPage() {
     </div>
   )
 }
+
 
 
 function MenuIcon(props: any) {
