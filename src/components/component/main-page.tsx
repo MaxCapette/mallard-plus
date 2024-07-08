@@ -297,7 +297,7 @@ export function MainPage() {
           <p className="   ">06000 NICE</p>
           <p className="  mt-4 ">contact@mallard-plus.fr</p>
 
-          <p className="  mt-4 ">TEL: 05 35 54 19 41</p>
+          <p className="  mt-4 ">TEL: 09 72 17 00 28</p>
         </div>
       </footer>
     </div>
