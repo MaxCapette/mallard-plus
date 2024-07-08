@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 220 25% 95%; /* Couleur de fond claire avec une légère teinte */
+    --foreground: 220 15% 20%; /* Texte sombre et neutre */
+    --primary: 240 70% 85%; /* Bleu vif mais doux */
+    --primary-foreground: 0 0% 100%; /* Texte clair pour la couleur primaire */
+    --secondary: 340 70% 85%; /* Rose vif mais doux */
+    --secondary-foreground: 0 0% 100%; /* Texte clair pour la couleur secondaire */
+    --accent: 200 80% 50%; /* Vert turquoise vif */
+    --accent-foreground: 0 0% 100%; /* Texte clair pour les accents */
+    --destructive: 0 70% 50%; /* Rouge vif mais pas trop saturé */
+    --destructive-foreground: 0 0% 100%; /* Texte clair pour les actions destructrices */
+    --muted: 220 20% 90%; /* Couleur de fond plus neutre pour les éléments discrets */
+    --muted-foreground: 220 15% 40%; /* Texte discret pour les éléments neutres */
+    --card: 0 0% 100%; /* Couleur de fond des cartes */
+    --card-foreground: 220 15% 20%; /* Texte sombre pour les cartes */
+    --popover: 0 0% 100%; /* Couleur de fond des popovers */
+    --popover-foreground: 220 15% 20%; /* Texte sombre pour les popovers */
+    --border: 220 10% 70%; /* Couleur des bordures */
+    --input: 220 10% 70%; /* Couleur des entrées */
+    --ring: 200 80% 50%; /* Couleur des anneaux de focus */
+    --radius: 0.5rem; /* Rayon des bordures pour une apparence légèrement arrondie */
   }
 }
 
+.backgroundCustom {
+  background: whitesmoke;
+}
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  font-family: 'IBM Plex Mono', monospace;
 }
